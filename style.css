@@ -1,0 +1,19 @@
+
+.contenedor {
+	display:flex;
+	flex-wrap: wrap;
+}
+.caja {
+	width:22vw;
+	height:200px;
+	margin: 1vw;
+	padding-top: 4px;
+}
+.rojo {
+	background-color:red;
+	color: yellow;
+}
+.negro {
+	background-color:#000000;
+	color: #ffffff;
+}
