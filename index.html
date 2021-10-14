@@ -1,98 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Trabajo de 2159</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codo a codo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <style>
+		:root {
+			--color-barra: #353a40;
+			--color-verde01: #34994b;
+			--color-gris: #353a40;
+			--color-azul: #1c5170;
+		}
+		.navbarra-bg {
+			background-color: var(--color-barra);
+		}
+		.texto-verde {
+			color: var(--color-verde01);
+		}
+		.cabecera {
+			background-image: url('images/palacio_aguas_corrientes.jpg');
+			background-size: 100%;
+		}
+		.pie {
+			background-color: var(--color-azul);
+			min-height: 5rem;
+		}
+		.pie a {
+			color: white !important;
+		}
+    </style>
 
 </head>
 <body>
 
-<div>
+
+	<nav class="navbar navbar-expand-md navbar-dark navbarra-bg" aria-label="Fourth navbar example">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+		<img src="images/codoacodologo.png">
+	  </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+	  
+		<div class="me-auto mb-2 mb-md-0">
+			<span class="text-white">Conf Bs As</span>
+		</div>
+	  
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Los oradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">El lugar y la fecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Conviértete en ordador</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link " href="#"><span class="texto-verde">Comprar tickets</span></a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  
+  
+  <div class="container-fluid" style="padding:0px;">
+	<div class="cabecera">
+		<div class="container">
+			<div class="p-4 p-md-5 mb-4 text-white  text-end row">
+				<div class="col-md-6 ">
+				</div>
+				<div class="col-md-6 ">
+				  <h1 class="display-5 fst-italic">Conf Bs As</h1>
+				  <p class="lead my-3">Bs As llega por primera vez a Aregentina. Un evento para compartir con 
+				  nuestra comunidad el conocimiento y la experiencia de los expertos que
+				  están creando el futuro de internet. Ven a conocer a miembros del
+				  evento, a otros estudiantes de Codo a Codo y los oradores de primer
+				  nivel que tenemos para tí. Te esperamos!
+				  </p>
+				  <p class="lead mb-0">
+						<a href="#" class="btn btn-outline-light">Quiero ser orador</a>
+						<a href="#" class="btn btn-success">Comprar tickets</a>
+				  </p>
+				</div>
+			 </div>
+		</div>
+	</div>
 	
+  </div>
+  
+  <div class="container">
 	
-	<header>
-    <nav class="navbar navbar-expand navbar-light bg-light">
-	  <div class="container-fluid">
-		<a class="navbar-brand" href="#">Codo a Codo</a>
+	<div class="row" style="margin:auto; max-width: 60rem;">
+		<div class="col-sm-4">
+			<div class="card" >
+			  <img src="images/steve.jpg" class="card-img-top" alt="Steve Jobs">
+			  <div class="card-body">
+			    <p>
+					<span class="badge bg-warning text-dark">JavaScript</span>
+					<span class="badge bg-success">React</span>
+				</p>
+				<h5 class="card-title">Steve Jobs</h5>
+				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			  </div>
+			</div>
+		</div>
 		
-		<div class="collapse navbar-collapse">
-		  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		<div class="col-sm-4">
+			<div class="card" >
+			  <img src="images/bill.jpg" class="card-img-top" alt="Bill Gates">
+			  <div class="card-body">
+			    <p>
+					<span class="badge bg-warning text-dark">JavaScript</span>
+					<span class="badge bg-success">React</span>
+				</p>
+				<h5 class="card-title">Bill Gates</h5>
+				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			  </div>
+			</div>
+		</div>
+		
+		<div class="col-sm-4">
+			<div class="card" >
+			  <img src="images/nose.jpg" class="card-img-top" alt="Ada Wong">
+			  <div class="card-body">
+			    <p>
+					<span class="badge bg-secondary ">Negocios</span>
+					<span class="badge bg-danger">Startups</span>
+				</p>
+				<h5 class="card-title">Ada Wong</h5>
+				<p class="card-text">Lorem ipsum dolor sit nemesis, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+	
+  </div>
+  
+  <div class="py-3"></div>
+  
+  <div class="container-fluid">
+		<div class="row" style="min-height: 400px">
+			<div class="col-sm-6" style="background-image: url('images/playa.jpg');">
+			</div>
+			
+			<div class="col-sm-6 text-white p-3" style="background-color: var(--color-gris)">
+				<h3>Bs As - Octubre</h3>
+				<p>
+					Buenos Aires es la provincia y localidad más grande del estado de ARgentina, en los Estados Unidos (what?). Honolulu es la más sureña de enros las principales ciudades estadounidenses. Lorem ipsum dolor sit nemesis, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit nemesis, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</p>
+				<a href="#" class="btn btn-outline-light">Conocé más</a>
+			</div>
+			
+		</div>
+  </div>
+
+	<div class="py-3"></div>
+
+	<div class="container">
+		<div class="text-center" style="margin:auto; max-width: 50rem;">
+			<p>CONVIÉRTETE EN UN</p>
+			<h3>ORADOR</h3>
+			<p>Anótate como orador para dar una <span style="text-decoration-line: underline; text-decoration-style: dotted">charla ignite</span>. Cuétanos de qué quieres hablar!</p>
+			
+			<form>
+				<div class="row">
+					<div class="col-sm-6">
+						<input type="text" class="form-control" placeholder="Nombre">
+					</div>
+					<div class="col-sm-6">
+						<input type="text" class="form-control" placeholder="Apellido">
+					</div>
+					<div class="col-12 p-3">
+						<textarea class="form-control" placeholder="Sobre qué quieres hablar?" rows="4"> 
+						</textarea>
+						<p align="left" class="text-muted">Recuerda incluir un titulo para tu charla</p>
+						<div class="d-grid gap-2">
+						  <button class="btn btn-success" type="submit">Enviar</button>
+						</div>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+	</div>
+    
+	<div class="py-3"></div>
+	
+	<nav class="navbar  navbar-expand-sm navbar-dark pie">
+	  <div class="container">
+		
+		<div class="" style="margin:auto" id="navbarCollapse">
+		  <ul class="navbar-nav" >
+			
 			<li class="nav-item">
-			  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+			  <a class="nav-link" href="#">Preguntas frecuentes</a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="#">Link</a>
+			  <a class="nav-link" href="#">Contáctanos</a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link disabled">Desactivado</a>
+			  <a class="nav-link" href="#">Prensa</a>
 			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Conferencias</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Términos y Condiciones</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Privacidad</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Estudiantes</a>
+			</li>
+			
 		  </ul>
-		  <form class="d-flex">
-			<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-			<button class="btn btn-outline-success" type="submit">Buscar</button>
-		  </form>
 		</div>
 	  </div>
 	</nav>
-  </header>
-  
-  
-<div class="container">
-	  <div class="row">
-	<div class="col-4">
-		<div class="card">
-		  <img src="https://disenowebakus.net/imagenes/articulos/html5.jpg" class="card-img-top" alt="...">
-		  <div class="card-body">
-			<h5 class="card-title">titulo 1</h5>
-			<p class="card-text">Conteido de Card</p>
-			<p class="card-text"><small class="text-muted">Ultima actualizacion 1</small></p>
-		  </div>
-		</div>
-	</div>
-	<div class="col-4">
-		<div class="card">
-		  <img src="https://www.solucionex.com/sites/default/files/posts/imagen/css_blog.png" class="card-img-top" alt="...">
-		  <div class="card-body">
-			<h5 class="card-title">titulo 2</h5>
-			<p class="card-text">Conteido de Card</p>
-			<p class="card-text"><small class="text-muted">Ultima actualizacion 1</small></p>
-		  </div>
-		</div>
-	</div>
-	<div class="col-4">
-		<div class="card">
-		  <img src="https://www.lucushost.com/blog/wp-content/uploads/2019/10/bootstrap.png" class="card-img-top" alt="...">
-		  <div class="card-body">
-			<h5 class="card-title">titulo 3</h5>
-			<p class="card-text">Conteido de Card</p>
-			<p class="card-text"><small class="text-muted">Ultima actualizacion 1</small></p>
-		  </div>
-		</div>
-	</div>
-  </div>
-  
-  <form>
-	  <div >
-		<label for="exampleInputEmail1" class="form-label">Email</label>
-		<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-		<div id="emailHelp" class="form-text">Nunca comparta su email.</div>
-	  </div>
-	  <div class="mb-3">
-		<label for="exampleInputPassword1" class="form-label">Contraseña</label>
-		<input type="password" class="form-control" id="exampleInputPassword1">
-	  </div>
-	  <div class="mb-3 form-check">
-		<input type="checkbox" class="form-check-input" id="exampleCheck1">
-		<label class="form-check-label" for="exampleCheck1">Verificar</label>
-	  </div>
-	  <button type="submit" class="btn btn-primary">Enviar</button>
-	</form>
-  
-  
-</div>
-	
-	
-</div>
 
 
 </body>
